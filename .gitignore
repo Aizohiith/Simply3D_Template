@@ -1,0 +1,5 @@
+# Ignore Visual Studio specific files and folders
+.vs/
+Debug/
+*.VC.db
+*.VC.VC.opendb
