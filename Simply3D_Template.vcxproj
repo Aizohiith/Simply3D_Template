@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="#Libraries\ImGui\imgui.cpp" />
-    <ClCompile Include="#Libraries\ImGui\imgui_demo.cpp" />
-    <ClCompile Include="#Libraries\ImGui\imgui_draw.cpp" />
-    <ClCompile Include="#Libraries\ImGui\imgui_impl_glfw.cpp" />
-    <ClCompile Include="#Libraries\ImGui\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="#Libraries\ImGui\imgui_tables.cpp" />
-    <ClCompile Include="#Libraries\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Libraries\ImGui\imgui.cpp" />
+    <ClCompile Include="Libraries\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Libraries\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Libraries\ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Libraries\ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Libraries\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Libraries\ImGui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Simply3D\Camera.cpp" />
     <ClCompile Include="Simply3D\Collider.cpp" />
@@ -100,12 +100,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)#Libraries;$(SolutionDir)#Libraries\ASSIMP\include;$(SolutionDir)#Libraries\GLM;$(SolutionDir)#Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)#Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\ASSIMP\include;$(SolutionDir)Libraries\GLM;$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)#Libraries\ASSIMP\lib\Release;$(SolutionDir)#Libraries\GLEW\lib\Release\Win32;$(SolutionDir)#Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\ASSIMP\lib\Release;$(SolutionDir)Libraries\GLEW\lib\Release\Win32;$(SolutionDir)Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -117,14 +117,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)#Libraries;$(SolutionDir)#Libraries\ASSIMP\include;$(SolutionDir)#Libraries\GLM;$(SolutionDir)#Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)#Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\ASSIMP\include;$(SolutionDir)Libraries\GLM;$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)#Libraries\ASSIMP\lib\Release;$(SolutionDir)#Libraries\GLEW\lib\Release\Win32;$(SolutionDir)#Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\ASSIMP\lib\Release;$(SolutionDir)Libraries\GLEW\lib\Release\Win32;$(SolutionDir)Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -134,12 +134,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)#Libraries;$(SolutionDir)#Libraries\ASSIMP\include;$(SolutionDir)#Libraries\GLM;$(SolutionDir)#Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)#Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\ASSIMP\include;$(SolutionDir)Libraries\GLM;$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)#Libraries\ASSIMP\lib\Release;$(SolutionDir)#Libraries\GLEW\lib\Release\Win32;$(SolutionDir)#Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\ASSIMP\lib\Release;$(SolutionDir)Libraries\GLEW\lib\Release\Win32;$(SolutionDir)Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -151,14 +151,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)#Libraries;$(SolutionDir)#Libraries\ASSIMP\include;$(SolutionDir)#Libraries\GLM;$(SolutionDir)#Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)#Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\ASSIMP\include;$(SolutionDir)Libraries\GLM;$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Simply3D;$(SolutionDir)Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)#Libraries\ASSIMP\lib\Release;$(SolutionDir)#Libraries\GLEW\lib\Release\Win32;$(SolutionDir)#Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\ASSIMP\lib\Release;$(SolutionDir)Libraries\GLEW\lib\Release\Win32;$(SolutionDir)Libraries\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
