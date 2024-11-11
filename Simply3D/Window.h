@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <glfw/glfw3.h>
+#include <GLFW/glfw3.h>
 
 #define MOUSE_BUTTON_1         0
 #define MOUSE_BUTTON_2         1
