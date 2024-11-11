@@ -13,6 +13,8 @@ Object::Object()
 	gb_UpdateCollider = true;
 	gb_CastShadow = true;
 	gb_RecieveShadow = true;
+	gg_Texture = nullptr;
+	gg_Mesh = nullptr;
 
 	gg_ColliderType = NoColliderType;
 	Update();
