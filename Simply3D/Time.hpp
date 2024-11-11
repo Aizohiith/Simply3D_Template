@@ -2,6 +2,8 @@
 #include <iostream>
 #include <chrono>
 
+#define COMPILER 11
+
 namespace Time
 {
     inline uint64_t GetCurrentTime()
@@ -15,7 +17,14 @@ namespace Time
         std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
         std::time_t currentTime = std::chrono::system_clock::to_time_t(now);
         std::tm localTime;
-        localtime_s(&localTime, &currentTime);
+        #if COMPILER == 11
+            localtime_s(&localTime, &currentTime);
+        #endif // COMPILER == 11
+        #if COMPILER == 23
+                    localtime_r(&currentTime, &localTime);
+        #endif // COMPILER == 23
+
+        
         return localTime.tm_sec;
     }
 
@@ -24,7 +33,12 @@ namespace Time
         std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
         std::time_t currentTime = std::chrono::system_clock::to_time_t(now);
         std::tm localTime;
-        localtime_s(&localTime, &currentTime);
+        #if COMPILER == 11
+                localtime_s(&localTime, &currentTime);
+        #endif // COMPILER == 11
+        #if COMPILER == 23
+                localtime_r(&currentTime, &localTime);
+        #endif // COMPILER == 23
         return localTime.tm_min;
     }
 
@@ -33,7 +47,12 @@ namespace Time
         std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
         std::time_t currentTime = std::chrono::system_clock::to_time_t(now);
         std::tm localTime;
-        localtime_s(&localTime, &currentTime);
+        #if COMPILER == 11
+                localtime_s(&localTime, &currentTime);
+        #endif // COMPILER == 11
+        #if COMPILER == 23
+                localtime_r(&currentTime, &localTime);
+        #endif // COMPILER == 23
         return localTime.tm_hour;
     }
 
