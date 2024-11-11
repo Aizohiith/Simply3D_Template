@@ -22,4 +22,4 @@ To install these libraries on a Debian-based system, run:
 ```bash
 sudo apt update
 sudo apt install libassimp-dev libglew-dev libglfw3-dev libglm-dev libx11-dev libxrandr-dev libxi-dev libxinerama-dev libxcursor-dev libgl1-mesa-dev
-g++ -o my_program main.cpp Simply3D/*.cpp Libraries/ImGui/*.cpp -lassimp -lGLEW -lglfw -lGL -lX11 -lXrandr -lXi -lXinerama -lXcursor -std=c++17
+g++ -o my_program main.cpp Simply3D/*.cpp Libraries/ImGui/*.cpp -I Simply3D -lassimp -lGLEW -lglfw -lGL -lX11 -lXrandr -lXi -lXinerama -lXcursor -std=c++17
