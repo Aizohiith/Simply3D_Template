@@ -234,7 +234,7 @@ void Simply3D::Setup()
 	gg_UnitSphere->Init(IcosphereObjectType, ShaderTypes::BasicShaderType, MaterialTypes::None);
 //	
 	gg_No_Shadow = new Texture();
-	gg_No_Shadow->Load("Simply3D/Textures/plane.png", false);
+	gg_No_Shadow->Load("Simply3D/Textures/Plane.png", false);
 	LOG_DEBUG3D(gb_Debug, "Engine Setup Completed");
 }
 
