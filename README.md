@@ -5,8 +5,6 @@ Simply3D_Template is a C++ project template for creating 3D applications using c
 ## Table of Contents
 - [Setup and Prerequisites](#setup-and-prerequisites)
 - [Compilation Instructions](#compilation-instructions)
-- [Usage](#usage)
-- [License](#license)
 
 ## Setup and Prerequisites
 
@@ -24,3 +22,4 @@ To install these libraries on a Debian-based system, run:
 ```bash
 sudo apt update
 sudo apt install libassimp-dev libglew-dev libglfw3-dev libglm-dev libx11-dev libxrandr-dev libxi-dev libxinerama-dev libxcursor-dev libgl1-mesa-dev
+g++ -o my_program main.cpp Simply3D/*.cpp Libraries/ImGui/*.cpp -lassimp -lGLEW -lglfw -lGL -lX11 -lXrandr -lXi -lXinerama -lXcursor -std=c++17
